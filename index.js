@@ -9,7 +9,7 @@ const todosRoutes = require("./routes/todos");
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // Route mounting
